@@ -1,11 +1,10 @@
 package ru.job4j;
 
-public class Multiple{
+public class Multiple {
     public static void main(String[] args) {
         for (int i = 1; i <= 9; i++) {
             System.out.println("1 * " + i + " = " + i);
         }
-
 //        если строго по условиям задания то этот вариант
 
         System.out.println("1 * 1 = 1");
@@ -18,6 +17,4 @@ public class Multiple{
         System.out.println("1 * 8 = 8");
         System.out.println("1 * 9 = 9");
     }
-
-
 }
