@@ -10,6 +10,6 @@ public class MultipleSwitchWeekTest {
     @Test
     public void whenMondayThen1() {
         int expected = 1;
-        assertThat(MultipleSwitchWeek.numberOfDay ("Monday"), is(expected));
+        assertThat(MultipleSwitchWeek.numberOfDay("Monday"), is(expected));
     }
 }
