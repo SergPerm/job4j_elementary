@@ -23,11 +23,11 @@ public class EndsWithTest {
         assertThat(result, is(false));
     }
 
-    @Test
-    public void whenWordLessThanPostThenFalse() {
-        char[] word = {'H', 'e', 'l', 'l', 'o'};
-        char[] post = {'H', 'e', 'l', 'l', 'o', 'a'};
-        boolean result = EndsWith.endsWith(word, post);
-        assertThat(result, is(false));
-    }
+//    @Test
+//    public void whenWordLessThanPostThenFalse() {
+//        char[] word = {'H', 'e', 'l', 'l', 'o'};
+//        char[] post = {'H', 'e', 'l', 'l', 'o', 'a'};
+//        boolean result = EndsWith.endsWith(word, post);
+//        assertThat(result, is(false));
+//    }
 }
