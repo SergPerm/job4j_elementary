@@ -1,22 +1,31 @@
 package ru.job4j.array;
 
+import java.time.Duration;
+import java.time.Instant;
+import java.util.Date;
+
 public class Defragment {
     public static String[] compress(String[] array) {
-        boolean ifExistNotNullElement = true;
+//        Instant start = Instant.now();
+//        boolean ifExistNotNullElement = true;
         for (int index = 0; index < array.length; index++) {
-            if (array[index] == null && ifExistNotNullElement) {
+            if (array[index] == null) {
+//            if (array[index] == null && ifExistNotNullElement) {
                 for (int i = index + 1; i < array.length; i++) {
                     if (array[i] != null) {
                         array[index] = array[i];
                         array[i] = null;
                         break;
                     }
-                    if (i == array.length - 1) {
-                        ifExistNotNullElement = false;
-                    }
+//                    if (i == array.length - 1) {
+//                        ifExistNotNullElement = false;
+//                    }
                 }
             }
         }
+//        Instant finish = Instant.now();
+//        long elapsed = Duration.between(start, finish).toMillis();
+//        System.out.println("Прошло времени, мс: " + elapsed);
         return array;
     }
 
